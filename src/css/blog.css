@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blogs {
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.blog_container {
+    max-width: 80%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+}
+
+.blog_card {
+    flex-wrap: wrap;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog_card > img{
+    width: 350px;
+    height: 210px;
+}
+.blog_card > a{
+    font-size: 28px;
+    width: 350px;
+}
+.blog_card > div {
+    display: flex;
+    width: 350px;
+    gap: 15px;
+    color: #b7b6b6;
+}
+.blog_card > div > span {
+    color: #b7b6b6;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news {
+    font-size: 14px;
+    color: #2fa0f1;
+}
+
+.blog_card > p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    color: #7c7b7b;
+}
+
+.continue{
+    font-size: 16px;
+    color: #2fa0f1;
+    width: 350px;
+    font-weight: 550;
+}
+
+.blog_cards_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.blog_posts>h1 {
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.picture_1{
+   background-color: white;
+}
+.picture_2{
+   background-color: white;
+}
+.picture_3{
+   background-color: white;
+}
+@media screen and (max-width:1200px) {
+    .blog_cards_box{
+        width: 100%;
+        height: 100vh;
+    }
+    .blog_card{
+        width: 290px;
+        height: 511px;
+    } 
+    .blog_card > img{
+        width: 290px;
+        height: 174px;
+    }
+    .blog_card > a{
+        font-size: 20px;
+        width: 290px;
+    }
+    .blog_card > div{
+        width: 290px;
+    }
+    .continue{
+        width: 290px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .blog_cards_box{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blog_card{
+        width: 330px;
+        height: 523px;
+    } 
+    .blog_card > img{
+        width: 330px;
+        height: 198px;
+    }
+    .blog_card > a{
+        font-size: 20px;
+        width: 330px;
+    }
+    .blog_card > div{
+        width: 330px;
+    }
+    .continue{
+        width: 330px;
+    }
+}
+@media screen and (max-width:880px) {
+    .blog_container{
+        width: 100%;
+        min-height: 270vh;
+    }
+    .blog_cards_box{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blog_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_card{
+        width: 550px;
+        height: 520px;
+        display: flex;
+        gap: 7px;
+    } 
+    .blog_card > img{
+        width: 550px;
+        height: 300px;
+    }
+    .blog_card > a{
+        font-size: 20px;
+        width: 550px;
+    }
+    .blog_card > div{
+        width: 550px;
+    }
+    .continue{
+        width: 550px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:700px) {
+    .blogs{
+        width: 100%;
+        min-height: 300vh;
+    }
+    .blog_container{
+        width: 100%;
+        min-height: 300vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .blog_cards_box{
+        display: flex;
+        width: 100%;
+        height: 1800px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blog_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog_card{
+        width: 400px;
+        height: 480px;
+        display: flex;
+        gap: 7px;
+    } 
+    .blog_card > img{
+        width: 400px;
+        height: 220px;
+    }
+    .blog_card > a{
+        font-size: 20px;
+        width: 400px;
+    }
+    .blog_card > div{
+        width: 400px;
+    }
+    .continue{
+        width: 400px;
+        margin-bottom: 50px;
+    }
+}

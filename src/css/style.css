@@ -1,0 +1,17 @@
+@import url('./navbar.css');
+@import url('./home.css');
+@import url('./features.css');
+@import url('./features_1.css');
+@import url('./features_2.css');
+@import url('./about.css');
+@import url('./ourteam.css');
+@import url('./testimonials.css');
+@import url('./blog.css');
+@import url('./contact.css');
+@import url('./footer.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

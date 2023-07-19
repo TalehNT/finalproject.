@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section_about{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #63636317;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_container{
+    width: 80%;
+    min-height: 70vh;
+    /* background-color: aliceblue; */
+}
+.about_container > h1{
+    font-family: monospace;
+    font-size: 40px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.about_container_main{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: rgba(183, 241, 103, 0.778); */
+}
+.about_container_main_photo > img {
+    width: 100%;
+    height: 60vh;
+    /* padding-left: 40px ; */
+}
+.about_container_main_text{
+    width: 50%;
+    height: 60vh;
+    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 150px;
+}
+.about_container_main_text > h3{
+    font-size: 28px;
+    font-weight: 640;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about_container_main_text > p{
+    line-height: 1.4;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #636363;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about_container_main_text_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    /* background-color: #2f36407a; */
+    width: 100%;
+    height: 30%;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.about_container_main_text_part_3{
+    display: flex;
+    /* background-color: chocolate; */
+}
+.about_container_main_text_part_3 > div{
+    margin-left: 20px;
+}
+.about_container_main_text_part_3 > i{
+    color: green;
+}
+.about_container_main_text > div>button {
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #4286f4d8;
+    border: none;
+    color: white;
+}
+@media screen and (max-width:1250px) {
+    .about_container_main_photo > img {
+       width: 400px;
+       height: 500px;
+    }
+    .about_container_main_text{
+        width: 400px;
+        height: 500px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:1150px) {
+    .about_container > h1{
+        font-size:32px;
+    }
+    .about_container_main{
+        display: flex;
+        gap: 100px;
+    }
+    .about_container_main_photo > img {
+       width: 400px;
+       height: 400px;
+    }
+    .about_container_main_text{
+        width: 400px;
+        height: 400px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:1000px) {
+    .section_about{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #63636317;
+    }
+    .about_container > h1{
+        font-size:40px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding: 100px 0;
+    }
+    .about_container_main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 150vh;
+    }
+    .about_container_main_photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_container_main_photo > img{
+       width: 80%;
+       height: 100%;
+       margin: 0 auto;
+       /* padding-left: 50px; */
+    }
+    .about_container_main_text{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        /* background-color: #4286f4; */
+        padding: 0;
+    }
+}
+@media screen and (max-width:650px){
+    .about_container_main_photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_container_main_photo > img{
+       width: 95%;
+       height: 100%;
+       margin: 0 auto;
+       /* padding-left: 50px; */
+    }
+    .about_container_main_text > p {
+        font-size: 14px;
+    }
+}

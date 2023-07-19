@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.features_1{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features_1_container{
+    width: 70%;
+    min-height: 70%;
+    display: flex;
+}
+.features_1_photo{
+    min-width: 50%;
+    height: 70vh;
+}
+.features_1_photo > img{
+    width: 100%;
+    height: 70vh;
+}
+.features_1_text{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.features_1_text_content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    line-height: 1.2;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.features_1_text_content > h1{
+    font-size: 40px;
+}
+
+.features_1_text_content > p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #636363b3;
+}
+.features_1_text_content_person{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid #4286f4;
+}
+.person{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.person_photo{
+      width: 100%;
+      height: 50%;
+      padding: 0 15px;
+      display: flex;
+      gap: 6px;
+      padding-top: 12px;
+}
+.person_photo > img{
+     width: 18%;
+     border-radius: 50%;
+     height: 68%;
+}
+.person_name{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 0 0 10px;
+}
+.person > p {
+    font-style:oblique;
+    padding: 5px 15px;
+    color: #636363;
+}
+
+@media screen and (max-width:1390px) {
+    .features_1_photo > img{
+        width: 560px;
+        height: 435px;
+    }
+    .features_1_text{
+        width: 433px;
+        height: 475px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .features_1_photo > img{
+        width: 550px;
+        height: 500px;
+    }
+    .features_1_text{
+        width: 500px;
+        height: 450px;
+    }
+    .features_1_text_content{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .features_1_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    .features_1_photo > img{
+        width: 690px;
+        height: 503px;
+    }
+    .features_1_photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .features_1_container{
+        padding: 100px 0;
+        width: 100%;
+        min-height: 70vh;
+        display: block;
+    }
+    .features_1_text{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .person_photo > img{
+        width: 10%;
+        margin-top: 5px;
+    }
+    .person > p {
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width:760px){
+    .features_1_photo > img{
+        width: 550px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:575px){
+    .features_1_container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .features_1_photo{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features_1_photo > img{
+        width: 100%;
+        /* height: 350px; */
+    }
+    .features_1_text{
+        width: 420px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features_1_text_content{
+       width: 100%;
+    }
+
+    .person > p {
+        line-height: 1.5;
+        font-size: 16px ;
+    }
+    .features_1_text_content > h1{
+        font-size: 32px;
+    }
+    .person_name{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px 0 0 10px;
+    }
+    .person_photo > img{
+        width: 18%;
+        border-radius: 50%;
+        height: 68%;
+   }
+}

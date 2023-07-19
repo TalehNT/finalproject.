@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page1{
+    max-width: 100%;
+    min-height: 100vh;
+    /* margin: 0 auto; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.page1__photo{
+    max-width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 0;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    justify-content: end;
+}
+
+.page1__text{
+    min-height: 80vh;
+    max-width: 70%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.page1__text > h1 {
+    font-size: 50px;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    width: 500px;
+    padding: 10px;
+}
+.page1__text > p{
+    width: 500px;
+    padding: 10px;
+    padding-bottom: 50px;
+    color: gray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+.page1__text > button {
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #4286f4;
+    display: flex ;
+    border: none;
+    justify-content: center;
+    margin-left: 10px;
+    width: 140px;
+    color: white;
+}
+@media screen and ( max-width:1218px){
+    .page1{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 130vh;
+        padding-bottom: 100px;
+    }
+    .page1__photo{
+        display: flex;
+        position: absolute;
+        top: 10%;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .page1__photo>img{
+        height: 100%;
+    }
+    .page1__text{
+        padding-top: 100px;
+        position: relative;
+        top: 40%;
+        left: 0;
+        width: 100%;
+    }
+    .page1__text > button{
+        visibility: hidden;
+    }
+    .page1__text > h1{
+        font-size: 32px;
+        width: 100%;
+        opacity: 1;
+    }
+    .page1__text > p{
+        line-height: 1.3;
+        font-size: 18px;
+        width: 600px;
+    }
+}
+@media screen and ( max-width:720px){
+    .page1__photo{
+        width: 50%;
+    }
+    .page1__text > p{
+        width: 370px;
+    }
+    .page1__text > h1{
+        width: 370px;
+    }
+    .page1{
+        margin-bottom: 50px;
+    }
+}
